@@ -6,31 +6,32 @@
   <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div> -->
 <div class="container">
-  <div class="row">
-    <div class="col-md-3">
-
-      <!-- <app-customers></app-customers> -->
-      a
+  <div class="row" style="background-color:aliceblue">
+    <div class="col-md-4">
+      <a [routerLink]="['/home']">Home <i class="fa fa-home" aria-hidden="true"></i></a>
     </div>
-    <div class="col-md-3">
-      b
-      <!-- <app-vendors></app-vendors> -->
+    <div class="col-md-2">
+      <a [routerLink]="['/products']">Products <i class="fa fa-microchip" aria-hidden="true"></i></a>
     </div>
-    <div class="col-md-3">
-      c
-      <!-- <app-products></app-products> -->
+    <div class="col-md-2">
+      <a [routerLink]="['/customers']">Customers <i class="fa fa-user-circle" aria-hidden="true"></i></a>
     </div>
-    <div class="col-md-3">
-      d
-      <!-- <app-orders></app-orders> -->
+    <div class="col-md-2">
+      <a [routerLink]="['/orders']">Orders <i class="fa fa-bars" aria-hidden="true"></i></a>
     </div>
+    <div class="col-md-2">
+      <a [routerLink]="['/vendors']">Vendors <i class="fa fa-handshake-o" aria-hidden="true"></i></a>
+        </div>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
   </div>
 </div>
 <!-- <ul> 
-  <li><a [routerLink]="['/products']">Products</a></li>
-  <li><a [routerLink]="['/customers']">Customers</a></li>
-  <li><a [routerLink]="['/orders']">Orders</a></li>
-  <li><a [routerLink]="['/vendors']">Vendors</a></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
   <li><a [routerLink]="['/home']">Home</a></li>
 
 </ul> -->

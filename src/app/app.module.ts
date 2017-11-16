@@ -9,6 +9,7 @@ import { CustomersComponent } from './customers/customers.component';
 import { OrdersComponent } from './orders/orders.component';
 import { RouterModule } from '@angular/router';
 import { Constants } from "./constants";
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Constants } from "./constants";
     ProductsComponent,
     VendorsComponent,
     CustomersComponent,
-    OrdersComponent
+    OrdersComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
