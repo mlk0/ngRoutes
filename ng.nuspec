@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<package>
+  <metadata>
+    <id>ES_ngClient</id>
+    <version>1.0</version>
+    <title>ES Angular Client</title>
+    <authors>D+H</authors>
+    <owners>D+H</owners>
+    <licenseUrl>http://www.dhltd.com/</licenseUrl>
+    <projectUrl>http://www.dhltd.com/</projectUrl>
+    <iconUrl>http://www.dhltd.com/resources/Avatar3-32x32.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Deploys Angular Client</description>
+    <copyright>Copyright 2017</copyright>
+  </metadata>
+
+  <files>
+
+    
+    <file src="dist\**\*" target="app" />
+    <file src="DHDeployment\PreDeploy.WebServices.ps1" target="PreDeploy.ps1" />
+    <file src="DHDeployment\common_functions.ps1" target="common_functions.ps1" />
+    <file src="DHDeployment\UpdateConfigurationFiles.ps1" target="UpdateConfigurationFiles.ps1" />
+ 
+  </files>
+
+
+</package>

@@ -1,0 +1,16 @@
+{
+    "configdata": {
+    "siteApppoolName": "TestPool44",
+    "enable32bit": "TRUE",
+    "siteName": "SampleSite12",
+    "sitePath": "C:\\Users\\Rijil.Raju\\Work\\MySampleApplication\\MySampleApplication",
+    "apppoolUsername": "harlandfs\\Rijil.Raju",
+    "apppoolPassword": "Unicorn@2014",
+    "identityType": "LocalService",
+    "errorLogPath": "C:\\Users\\Rijil.Raju\\Desktop\\EnvSetup\\EnvSetup15-10-2015\\logfile.log",
+    "Port": "8091",
+    "applicationPath": "C:\\Users\\Rijil.Raju\\Work\\SampleApplication\\SampleApplication",
+    "applicationName": "SampleApplication",
+    "applicationApppoolName": "ApplicationTestPool"
+}
+}

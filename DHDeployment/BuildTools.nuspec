@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ES_BuildTools</id>
+    <version>0.0.0.1</version>
+    <title>Octopus Build and Deploy Tools</title>
+    <authors>Winston Go</authors>
+    <owners>DH Registry Services</owners>
+    <licenseUrl>http://www.dhltd.com/</licenseUrl>
+    <projectUrl>http://www.dhltd.com/</projectUrl>
+    <iconUrl>http://www.dhltd.com/resources/Avatar3-32x32.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Set of tools in conjunction with Octopus Deploy required for use in building and/or deploying D+H software.</description>
+    <summary>Build and Deploy tools for use in conjunction with Octopus Deploy.</summary>
+  </metadata>
+  <files>
+    <file src="Logging\**\*" target="Logging" />
+    <file src="Exec\**\*" target="Exec" />
+    <file src="ServiceHandler\**\*" target="ServiceHandler" />
+  </files>
+</package>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <configdata>
+    <siteApppoolName>TestPool44</siteApppoolName>
+    <iisAppPoolDotNetVersion>v4.0</iisAppPoolDotNetVersion>
+    <enable32bit>TRUE</enable32bit>
+    <siteName>SampleSite12</siteName>
+	<sitePath>C:\Users\Rijil.Raju\Work\MySampleApplication\MySampleApplication</sitePath>
+    <apppoolUsername>harlandfs\Rijil.Raju</apppoolUsername>
+    <apppoolPassword>Unicorn@2013</apppoolPassword>
+	<identityType>LocalService</identityType>
+    <logPath>C:\Users\Rijil.Raju\Desktop\EnvSetup\EnvSetup27-10-2015\logfile.log</logPath>
+	<Port>8091</Port>
+	<applicationPath>C:\Users\Rijil.Raju\Work\SampleApplication\SampleApplication</applicationPath>
+	<applicationName>SampleApplication</applicationName>
+	<applicationApppoolName>ApplicationTestPool</applicationApppoolName>
+  </configdata>
+ 
+
