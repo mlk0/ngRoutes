@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-prod":"ng build --prod --aot --base-href /app/"
+    "build-prod":"ng build --prod --aot --base-href /en/app/"
   },
   "private": true,
   "dependencies": {
