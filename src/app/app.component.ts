@@ -38,11 +38,29 @@ export class AppComponent extends BaseComponent implements OnInit {
 
     //if there is no value in the lang (which would be the case in deep linking) just take it from the url if it's there  
     if (this.lang == '') {
-      if (pathname.toLowerCase().startsWith('/en') || pathname.toLocaleLowerCase().startsWith('/fr')) {
+      // if (pathname.toLowerCase().startsWith('/en') || pathname.toLocaleLowerCase().startsWith('/fr')) {
 
-        let routeParts: string[] = pathname.split('/');
-        this.lang = routeParts[1];
+      //   let routeParts: string[] = pathname.split('/');
+      //   this.lang = routeParts[1];
+      // }
+
+
+      if (pathname.toLowerCase().indexOf('/en') != -1 || pathname.toLocaleLowerCase().indexOf('/fr') != -1) 
+      {
+       
+       
+         let routeParts: string[] = pathname.split('/');
+         if(routeParts.indexOf(Constants.english)!=-1){
+            this.lang = Constants.english;
+         }
+
+         if(routeParts.indexOf(Constants.french)!=-1){
+          this.lang = Constants.french;
+        }
+
+         
       }
+
     }
 
     console.log(`AppComponent.ngOnInit - language : ${this.lang} `);
@@ -70,13 +88,11 @@ export class AppComponent extends BaseComponent implements OnInit {
       this.lang = Constants.english;
     }
 
-    //call to the OnInit in order to reset the binding in the templates that were implemented with interpolation type of binding
-    //super.ngOnInit();
-
+  
     console.log(`this.router.url : ${this.router.url}`);
 
+    //get the language agnostic part of the route
     let currentRoute = this.router.url;
-
     if (currentRoute.toLowerCase().startsWith('/en') || currentRoute.toLocaleLowerCase().startsWith('/fr')) {
       let routeParts: string[] = currentRoute.split('/');
       console.log(`routeParts : ${routeParts}`);
@@ -87,7 +103,10 @@ export class AppComponent extends BaseComponent implements OnInit {
       console.log(`languageAgnosticRoute : ${currentRoute}`);
     }
 
+    //redirect to the original destination but in the new language
     this.router.navigate([`${this.lang}/${currentRoute}`]);
+
+    //call the ngOnInit in order to reload the localized text for the menu items
     this.ngOnInit();
   }
  
