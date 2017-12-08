@@ -11,7 +11,8 @@ export class Constants {
 
         { path: '', redirectTo: 'home', pathMatch: 'full' },
         { path: 'home', component:WelcomeComponent },    
-        { path: 'products', component:ProductsComponent },
+        { path: "products", component:ProductsComponent },
+        // { path: "products/:id", component:ProductsComponent },
         { path: 'vendors', component:VendorsComponent },
         { path: 'orders', component:OrdersComponent },
         { path: 'customers', component:CustomersComponent },

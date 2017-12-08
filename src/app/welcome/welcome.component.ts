@@ -9,14 +9,14 @@ import { BaseComponent } from '../base.component';
 })
 export class WelcomeComponent extends BaseComponent implements OnInit {
 
+  
   constructor() {
     super();
   }
-
-  productsUrl: string;
-
+ 
+ 
   ngOnInit() {
-    this.productsUrl = `${this.lang}/products`;
+    super.ngOnInit();
   }
 
 }

@@ -1,3 +1,48 @@
-<p>
-  products works! {{lang}}
-</p>
+ 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      product works!
+    </div>
+    <div class="col-md">
+     <b>{{lang}}</b> 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      Selected Product Id : {{productId}}
+    </div>
+  </div>
+
+  
+  <div class="row">
+    <div class="col-md-4">
+      <a [routerLink]="[homeUrl]">Home</a>
+    </div>
+  </div>
+
+  <!-- <div class="row">
+    <div class="col-md-4">
+      <a [routerLink]="[productsUrl, {id : productId}]">Product {{productId}}</a>
+    </div>
+  </div> -->
+  
+  <div class="row">
+    <div class="col-md-4">
+      <a [routerLink]="[customersUrl, {id : customerId}]">Customer {{customerId}}</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <a [routerLink]="[ordersUrl, {id : orderId}]">Order {{orderId}}</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <a [routerLink]="[vendorsUrl, {id : vendorId}]">Vendor {{vendorId}}</a>
+    </div>
+  </div>
+  
+
+</div>
